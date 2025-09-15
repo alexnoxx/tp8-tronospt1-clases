@@ -1,4 +1,4 @@
-object daenerys{
+class Personaje {
     const artefactos = #{} //artefactos es una coleccion
     var capacidad = 2
     const log = []
@@ -28,7 +28,7 @@ object daenerys{
 
     }
 }
-
+//const daenerys = new Personaje()
 
 object rocadragon {
     const arconRocadragon = #{}
@@ -66,3 +66,8 @@ class Collar inherits Artefacto {
 class Armadura inherits Artefacto {
     override method nombre() = "Armadura de Acero Valyrio"
 }
+
+// const espada = new Espada()
+// const libro = new Libro()
+// const collar = new Collar()
+// const armadura = new Armadura()
