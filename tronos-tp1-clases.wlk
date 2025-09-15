@@ -47,23 +47,22 @@ object rocadragon {
 
 
 class Artefacto {
-    var nombre
 
-    method nombre() = nombre
+    method nombre() = "Artefacto Genérico" //lo sobreescribo en las clases hijas
 }
 
-object espada inherits Artefacto {
-    nombre = "Espada de Dragón"
+class Espada inherits Artefacto {
+    override method nombre() = "Espada de Acero"
 }
 
-object libro inherits Artefacto {
-    nombre = "Libro de Magia Ancestral"
+class Libro inherits Artefacto {
+    override method nombre() = "Libro de Magia Ancestral"
 }
 
-object collar inherits Artefacto {
-    nombre = "Collar de Fuego"
+class Collar inherits Artefacto {
+    override method nombre() = "Collar de Fuego"
 }
 
-object armadura inherits Artefacto {
-    nombre = "Armadura de Acero Valyrio"
+class Armadura inherits Artefacto {
+    override method nombre() = "Armadura de Acero Valyrio"
 }
