@@ -49,30 +49,39 @@ object rocadragon {
 class Artefacto {
     method poder(){}
     method usar(){}
-    method nombre() = "Artefacto Genérico" //lo sobreescribo en las clases hijas
+    method nombre() = generico //lo sobreescribo en las clases hijas
 }
 
 class Espada inherits Artefacto {
-    override method nombre() = "Espada de Acero"
+    override method nombre() = espada
 }
 
 class Libro inherits Artefacto {
-    override method nombre() = "Libro de Magia Ancestral"
+    override method nombre() = libro
 }
 
 class Collar inherits Artefacto {
-    override method nombre() = "Collar de Fuego"
+    override method nombre() = collar
 }
 
 class Armadura inherits Artefacto {
-    override method nombre() = "Armadura de Acero Valyrio"
+    override method nombre() = armadura
 }
 
-class botas inherits Artefacto {
+class Botas inherits Artefacto {
    override method poder() = 0
    override method usar() = true
 
 }
+
+
+object generico {}
+object espada {}
+object libro {}
+object collar {}
+object armadura {}
+
+
 
 // const espada = new Espada()
 // const libro = new Libro()
